@@ -16,4 +16,11 @@ parent folder.
 
 Navigate to the nicnac folder, and run 'node nicnac.js'.
 
- 
+This script only works for plain-text emails, and attachments are out, naturally. 
+
+# FILTERS
+
+nicnac will filter any emails of 10 Kilobytes or larger. The script reads image files as a base64 string, 
+so opening an email with a 4 Megabyte image will look like Matrix code rain. nicnac should return the filename 
+of any email of 10K or larger, so these files can be opened manually in the text editor of your choice. 
+10K should be plenty for any plain-text email.
