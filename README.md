@@ -9,6 +9,11 @@ process of setting up an email server on my Raspberry Pi, and was unable to conn
 As a temporary solution, I wrote this node.js script to loop through files in the Maildir/new directory,
 and parse any emails that had been received since the last time I ran nicnac.
 
+# SETUP
+
+Before running nicnac.js, be sure to create a file called lastchecked.txt. You may leave the file empty
+to start off with.
+
 # USAGE
 
 Before running nicnac, make sure the folder containing nicnac.js and the Maildir folder share the same
